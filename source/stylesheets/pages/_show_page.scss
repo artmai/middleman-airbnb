@@ -1,0 +1,83 @@
+.card-full-page {
+height: 50vh;
+}
+
+.img-circle-main {
+  top: 200px;
+  left: 20px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.container-full-page {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 30px;
+}
+
+.flexy-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.book-this-flat-card {
+  background-color: #F4F4F4;
+  width: 100%;
+  height: 2 00px;
+  border-radius: 5px;
+  margin: 20px 20px;
+}
+
+#flat_booking {
+  font-size: 23px;
+  color: black;
+}
+
+.background-color {
+  background: white;
+}
+
+.host-card {
+  display: flex;
+  width: 400px;
+  height: 200px;
+  h1 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 14px;
+    color: #908A82;
+  }
+  h2 {
+    color: #777A82;
+    font-size: 14px;
+    margin: 0px;
+  }
+  i {
+    color: #FBB23D;
+  }
+}
+
+.avatar-name {
+  text-align: center;
+}
+
+.right-section-card {
+  margin-left: 20px;
+}
+
+.form-group {
+  width: 200px;
+}
+
+#exampleFormControlSelect1 {
+  width: 100%;
+}
+
+.btn-default {
+  color: white;
+  background: #EA6161;
+  border-style: none;
+  width: 100%;
+
+}

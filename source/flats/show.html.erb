@@ -1,0 +1,60 @@
+<!-- source/flats/show.html.erb -->
+
+
+<!-- Access data.flats with owner's name as key -->
+<% flat = data.flats[owner] %>
+
+<!-- Inject flat data in template -->
+
+<div class="background-color">
+
+  <div class="card-full-page" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%), url('https://kitt.lewagon.com/placeholder/cities/<%= flat.city_slug %>');">
+  </div>
+
+  <div class="container-full-page">
+    <div class="row">
+      <div class="host-card col-xs-12 col-sm-6">
+          <div class="avatar-name">
+            <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{owner}", class: "img-circle-main" %>
+            <h2><%= flat.name %></p>
+          </div>
+          <div class="right-section-card">
+            <h1><%= flat.description %></h1>
+            <p><%= flat.city_name %></p>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+      </div>
+
+      <div class="host-card col-xs-12 col-sm-6">
+        <div class="book-this-flat-card">
+          <div class="booking-container">
+            <h2 id="flat_booking">Book this flat</h2>
+            <form>
+              <div class="flexy-box">
+                <div class="form-group">
+                  <input type="checkin" class="form-control" placeholder="checkin" name="checkin">
+                </div>
+                <div class="form-group">
+                  <input type="checkout" class="form-control" placeholder="checkout" name="checout">
+                </div>
+              </div>
+              <!-- <div class="form-group"> -->
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>1 guest</option>
+                  <option>2 guests</option>
+                  <option>3 guests</option>
+                </select>
+              <!-- </div> -->
+              <button type="submit" class="btn btn-default">Book it</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
